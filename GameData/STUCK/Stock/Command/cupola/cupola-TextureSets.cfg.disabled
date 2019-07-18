@@ -1,0 +1,49 @@
+KSP_TEXTURE_SET
+{
+	name = Stock-Cupola
+	MATERIAL
+	{
+		shader = KSP/Emissive/Bumped Specular
+		texture = _MainTex, Squad/Parts/Command/cupola/ksp_l_cupola_diff
+		texture = _Emission, Squad/Parts/Command/cupola/cupola_Emissive
+		texture = _BumpMap, Squad/Parts/Command/cupola/ksp_l_cupola_normal
+	}	
+}
+KSP_TEXTURE_SET
+{
+	name = Stock-Cupola-Recolor
+	recolorable = true
+	MATERIAL
+	{
+		shader = TU/Metallic
+		texture = _MainTex, Squad/Parts/Command/cupola/ksp_l_cupola_diff
+		texture = _Emission, Squad/Parts/Command/cupola/cupola_Emissive
+		texture = _BumpMap, Squad/Parts/Command/cupola/ksp_l_cupola_normal
+		texture = _MaskTex, STUCK/Stock/Command/cupola/cupola-MASK
+		textureColor = _MetallicGlossMap, 0,255,0,0
+		keyword = TU_RECOLOR
+		keyword = TU_STOCK_SPEC
+		vector = _DiffuseNorm,0.654563871159558,0.543775810352417,0.269670040625895
+		//vector = _MetalNorm,
+		vector = _SmoothnessNorm,0.350231722213483,0.0753903669704836,0.348563596166106
+	}
+	COLORS
+	{
+		mainColor = white
+		secondColor = black
+		detailColor = black	
+	}
+}
+@PART[cupola]:FOR[STUCK]
+{
+	MODULE
+	{
+		name = KSPTextureSwitch
+		textureSet = Stock-Cupola
+		textureSet = Stock-Cupola-Recolor
+	}
+	MODULE
+	{
+		name = SSTURecolorGUI
+	}
+}
