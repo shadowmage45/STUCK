@@ -30,9 +30,9 @@ KSP_TEXTURE_SET
 		textureColor = _MetallicGlossMap, 0,0,0,0
 		keyword = TU_RECOLOR
 		keyword = TU_STOCK_SPEC
-		vector = _DiffuseNorm,0.684719552841117,0.569964775136541,0
-		vector = _MetalNorm,0,0,0
-		vector = _SmoothnessNorm,0.228462272291137,0.222904891563281,0
+        vector = _DiffuseNorm,0.6330824,0,0
+        vector = _SmoothnessNorm,1,0,0
+        vector = _MetalNorm,0,0,0
 		mesh = TODO
 	}
 	MATERIAL
@@ -43,9 +43,9 @@ KSP_TEXTURE_SET
 		textureColor = _MetallicGlossMap, 0,0,0,0
 		keyword = TU_RECOLOR
 		keyword = TU_STOCK_SPEC
-		vector = _DiffuseNorm,0.684719552841117,0.569964775136541,0
-		vector = _MetalNorm,0,0,0
-		vector = _SmoothnessNorm,0.228462272291137,0.222904891563281,0
+        vector = _DiffuseNorm,0.6330824,0,0
+        vector = _SmoothnessNorm,1,0,0
+        vector = _MetalNorm,0,0,0
 		mesh = TODO
 	}
 	COLORS
@@ -62,6 +62,7 @@ KSP_TEXTURE_SET
 		name = KSPTextureSwitch
 		textureSet = Stock-LV-N
 		textureSet = Stock-LV-N-Recolor
+		currentTextureSet = Stock-LV-N
 	}
 	MODULE
 	{
